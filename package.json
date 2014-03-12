@@ -1,0 +1,7 @@
+{
+  "devDependencies": {
+    "cucumber": "^0.4.0",
+    "zombie": "^2.0.0-alpha31",
+    "markdown": "^0.5.0"
+  }
+}

@@ -70,6 +70,7 @@
         var hash = window.location.hash.replace('#', '');
         var modalElement = document.getElementById(hash);
         var htmlClasses = document.documentElement.className;
+        var bodyClasses = document.body.className;
         var modalChild;
         var oldModal;
 
@@ -85,6 +86,7 @@
 
                     // Set an html class to prevent scrolling
                     document.documentElement.className += ' has-overlay';
+                    document.body.className += ' has-overlay';
                 }
 
                 // Unmark previous active element
@@ -105,6 +107,7 @@
         } else {
             document.documentElement.className =
                     htmlClasses.replace(' has-overlay', '');
+            document.body.className = bodyClasses.replace( ' has-overlay', '' );
 
             // If activeElement is already defined, delete it
             if (modal.activeElement) {
